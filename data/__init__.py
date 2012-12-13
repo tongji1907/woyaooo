@@ -1,3 +1,5 @@
+from model import doc
+
 __author__ = 'william'
 import sqlalchemy as sa
 from sqlalchemy import create_engine
@@ -10,12 +12,18 @@ import dbfactory
 def init_datafactory(engine):
     """Call me before using any of the tables or classes in the model."""
 
-    sm = orm.sessionmaker(autoflush=True, transactional=True, bind=engine)
-
+    #sm = orm.sessionmaker(autoflush=True, transactional=True, bind=engine)
+    sm = orm.sessionmaker()
+    sm.configure(bind=engine)
     dbfactory.engine = engine
-    dbfactory.Session = orm.scoped_session(sm)
-    dbfactory.metadata = MetaData(engine)
-    pass
+    #dbfactory.Session = orm.scoped_session(sm)
+    dbfactory.Session = sm
+    dbfactory.metadata = MetaData(bind =engine)
+    config_mapping()
+
+def config_mapping():
+    t_doc = sa.Table('doc', dbfactory.metadata, autoload=True)
+    orm.mapper(doc.Doc, t_doc)
 
 def engine_from_config(configfile='db.config'):
     #config_file = open('db.config')

@@ -1,8 +1,8 @@
 __author__ = 'william'
 """SQLAlchemy Metadata and Session object"""
+from sqlalchemy import MetaData
 
-
-__all__ = ['engine', 'metadata', 'Session']
+#__all__ = ['engine', 'metadata', 'Session']
 
 # SQLAlchemy database engine.  Updated by model.init_model().
 engine = None
