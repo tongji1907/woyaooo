@@ -1,0 +1,35 @@
+__author__ = 'william'
+import sqlalchemy as sa
+from sqlalchemy import create_engine
+import ConfigParser
+from sqlalchemy import orm
+from sqlalchemy import MetaData
+import dbfactory
+
+
+def init_datafactory(engine):
+    """Call me before using any of the tables or classes in the model."""
+
+    sm = orm.sessionmaker(autoflush=True, transactional=True, bind=engine)
+
+    dbfactory.engine = engine
+    dbfactory.Session = orm.scoped_session(sm)
+    dbfactory.metadata = MetaData(engine)
+    pass
+
+def engine_from_config(configfile='db.config'):
+    #config_file = open('db.config')
+    config_file = open((configfile))
+    configs = ConfigParser.ConfigParser()
+    configs.readfp(config_file)
+    config_file.close()
+
+    db_name = configs.get('mysql','database')
+    user_name = configs.get('mysql',"user")
+    host_name = configs.get('mysql','host')
+    password = configs.get('mysql',"password")
+    engine_url = 'mysql://%s:%s@%s:3306/%s?charset=utf8' % (password,user_name,host_name,db_name)
+
+    print engine_url
+    engine =create_engine(engine_url,encoding = "utf-8",echo =True)
+    return engine
