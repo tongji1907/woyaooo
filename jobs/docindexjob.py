@@ -35,6 +35,7 @@ if __name__=="__main__":
         lucenedoc.add(Field('intent', doc.intent, Field.Store.YES, Field.Index.NOT_ANALYZED))
         #lucenedoc.add(Field('description', doc.description, Field.Store.YES, Field.Index.ANALYZED))
         lucenedoc.add(Field('description', descriptionValue, Field.Store.YES, Field.Index.ANALYZED))
+        lucenedoc.add(Field('title',doc.title,Field.Store.YES,Field.Index.ANALYZED))
         writer.addDocument(lucenedoc)
         writer.optimize()
     writer.close()

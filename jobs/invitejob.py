@@ -19,7 +19,6 @@ if __name__=="__main__":
     analyzer = StandardAnalyzer(version)
     #analyzer = CJKAnalyzer(version)
     searcher = IndexSearcher(idxDir)
-
     query = QueryParser(version, "description", analyzer).parse('猪八戒')
     hits = searcher.search(query, 1000)
 
