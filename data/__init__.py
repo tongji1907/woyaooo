@@ -1,11 +1,12 @@
 __author__ = 'william'
-from model import doc
+from model import doc_model
 from model import conversation
 import sqlalchemy as sa
 from sqlalchemy import create_engine
 import ConfigParser
 from sqlalchemy import orm
 from sqlalchemy import MetaData
+from model import talk
 import dbfactory
 
 
@@ -23,8 +24,10 @@ def init_datafactory(engine):
 def config_mapping():
     t_doc = sa.Table('doc', dbfactory.metadata, autoload=True)
     t_conversation = sa.Table('conversation',dbfactory.metadata,autoload = True)
-    orm.mapper(doc.Doc, t_doc)
+    t_talk = sa.Table("talk",dbfactory.metadata,autoload =True)
+    orm.mapper(doc_model.Doc, t_doc)
     orm.mapper(conversation.Conversation,t_conversation)
+    orm.mapper(talk.Talk,t_talk)
 
 def engine_from_config(configfile='db.config'):
     #config_file = open('db.config')
@@ -40,5 +43,5 @@ def engine_from_config(configfile='db.config'):
     engine_url = 'mysql://%s:%s@%s:3306/%s?charset=utf8' % (password,user_name,host_name,db_name)
 
     print (engine_url)
-    engine =create_engine(engine_url,encoding = "utf-8",echo =True)
+    engine =create_engine(engine_url,encoding = "utf-8",echo =False)
     return engine

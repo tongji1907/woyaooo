@@ -3,13 +3,12 @@ import math
 #import mylib
 import zlib
 mindistance = 0.01 # mininum
-
 import data
 import model
 from model import conversation
 
 from data import dbfactory
-from model import doc
+from model import doc_model
 from model import talk
 import my_chinesesegment
 
@@ -174,12 +173,12 @@ class Classifier:
 def my_learnstore(is_need):
     engine =data.engine_from_config()
     db = data.init_datafactory(engine)
-    talks = dbfactory.Session().query(talk.Talk).filter(intent>20)
-
+    talks = dbfactory.Session().query(talk.Talk).all()
+    print len(talks)
     for item in talks:
         print item.description
         words = my_chinesesegment.splitchinese(item.description)
-        mybayes.learn( words,is_need)
+        mybayes.learn(words,is_need)
 
     pass
 
@@ -209,7 +208,7 @@ def learntalks( talks, is_need):
     pass
 
 def my_relearn(focus = None,other = None):
-    my_learnstore()
+    my_learnstore("hello")
     print mybayes.status()
 
 def relearn( focus = None , other = None):
@@ -245,7 +244,8 @@ def reset(  ):
 def checkneedprobability( content ):
     global learned
     if learned == 1 :
-        relearn()
+        #relearn()
+        my_relearn(1)
         learned = 0
     wordsforlearn = my_chinesesegment.splitchinese(content)
     return mybayes.needprobability( wordsforlearn,evidence=False)

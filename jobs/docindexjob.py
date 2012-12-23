@@ -1,25 +1,27 @@
 # -*- coding: utf-8 -*-
 import data
+
 from lucene import *
 from lucene import SimpleFSDirectory, System, File,\
     Document, Field, StandardAnalyzer,ChineseAnalyzer,CJKAnalyzer, IndexWriter, Version,\
     IndexSearcher, QueryParser, MultiFieldQueryParser, IndexReader, Term, DateTools
 
 from data import dbfactory
-from model import doc
+
 from model import conversation
+from model import doc_model
 
-
-if __name__=="__main__":
+def do_index():
     initVM()
     indexDir  = "/home/william/woyaoo/luceneindex"
     version   = Version.LUCENE_CURRENT
     standardAnalyzer  = StandardAnalyzer(version)
     #chineseAnalyzer = CJKAnalyzer(version)
-    #engine =data.engine_from_config('indexdb.config')
-    engine = data.engine_from_config()
+    engine =data.engine_from_config('indexdb.config')
+    #engine = data.engine_from_config()
     db = data.init_datafactory(engine)
-    docs = dbfactory.Session().query(doc.Doc).all()
+    docs = dbfactory.Session().query(doc_model.Doc).filter(doc_model.Doc.dateCreated.like('%2012-12-23%')).all()
+    print len(docs)
     idxDir = SimpleFSDirectory(File(indexDir))
     perIndexCount = 5000
     writer = IndexWriter(idxDir, standardAnalyzer, True, IndexWriter.MaxFieldLength(512))
@@ -39,4 +41,8 @@ if __name__=="__main__":
         writer.addDocument(lucenedoc)
         writer.optimize()
     writer.close()
+    print "index finished"
+
+if __name__=="__main__":
+    do_index()
 
