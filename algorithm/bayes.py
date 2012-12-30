@@ -6,7 +6,7 @@ mindistance = 0.01 # mininum
 import data
 import model
 from model import conversation
-
+from model import bayeslib
 from data import dbfactory
 from model import doc_model
 from model import talk
@@ -22,7 +22,7 @@ def chi2Q(x2, v, exp=math.exp, min=min):
     v must be even.
     """
     assert v & 1 == 0
-    # XXX If x2 is very large, exp(-m) will underflow to 0.
+    # XXX If x2 is very large,exp(-m) will underflow to 0.
     m = x2 / 2.0
     sum = term = exp(-m)
     for i in range(1, v//2):
@@ -145,7 +145,23 @@ class Classifier:
             prob = self.probability(record)
         distance = abs(prob - 0.5)
         return distance, prob, word, record    
-        
+
+    def my_learn(self,wordstream, is_useless):
+        if is_useless:
+            self.nneed += 1
+        else:
+            self.nother += 1
+
+        for word in set(wordstream):
+            record = self.wordinfo.get(word)
+            if record is None:
+                record = WordInfo()
+            if is_useless:
+                record.needcount += 1
+            else:
+                record.othercount += 1
+
+            self.wordinfo[word] = record
     def learn(self, wordstream, is_need):
         if is_need:
             self.nneed += 1
@@ -170,17 +186,21 @@ class Classifier:
         """
         pass
 
-def my_learnstore(is_need):
+def my_learnstore():
     engine =data.engine_from_config()
     db = data.init_datafactory(engine)
-    talks = dbfactory.Session().query(talk.Talk).all()
-    print len(talks)
-    for item in talks:
-        print item.description
-        words = my_chinesesegment.splitchinese(item.description)
-        mybayes.learn(words,is_need)
 
-    pass
+    uselessTalks = dbfactory.Session().query(bayeslib.BayeseLib).filter_by(is_useless=1).all()
+    for uselessTalk in uselessTalks:
+        userlessStr = uselessTalk.value.encode("utf8")
+        words = my_chinesesegment.splitchinese(userlessStr)
+        mybayes.my_learn(words,True)
+    usefulTalks = dbfactory.Session().query(bayeslib.BayeseLib).filter_by(is_useless=0).all()
+    for usefulTalk in usefulTalks:
+        usefulStr = usefulTalk.value.encode("utf8")
+        words = my_chinesesegment.splitchinese(usefulStr)
+        mybayes.my_learn(words,False)
+
 
 def learnstore( storename, is_need):
     '''
@@ -208,7 +228,7 @@ def learntalks( talks, is_need):
     pass
 
 def my_relearn(focus = None,other = None):
-    my_learnstore("hello")
+    my_learnstore()
     print mybayes.status()
 
 def relearn( focus = None , other = None):
@@ -260,4 +280,7 @@ learned = 1
 
 if __name__ == '__main__':
     print checkneedprobability("我18.。。上班啦。。。朝阳哒。。。三元桥。。。哈。。。找一个踏踏实实在一起哒。。。好好过日子就哦啦。。。加我Q传照片给你。。。Q874419414.。。")
-    print learned
+    #print checkneedprobability("我不知道怎么办。")
+    print checkneedprobability("收购iPhone5一部,有锁无锁美版港版都行 - 3500元")
+    print checkneedprobability("如果有问题，请联系客服 QQ 32234242.")
+    #print learned

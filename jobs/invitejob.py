@@ -38,10 +38,9 @@ def do_invite(keywords):
     patterns = ["[^A-Za-z0-9_-]*(?P<buzz>([A-Za-z0-9_-]+(\.\w+)*@(\w+\.)+\w{2,3}))", '''qq[^\d]*(?P<buzz>[1-9][0-9]{4,})''']
     for indentCandidate in indentCandidates:
 
+
         emailPattern = patterns[0]
         qqPattern = patterns[1]
-
-
         qqMatches =re.finditer(qqPattern,indentCandidate, re.IGNORECASE| re.DOTALL)
         emailMatches = re.finditer(emailPattern,indentCandidate, re.IGNORECASE| re.DOTALL)
 
@@ -54,6 +53,7 @@ def do_invite(keywords):
         for emailMatch in emailMatches:
             email = emailMatch.group("buzz").strip()
             #print email
+
             inviteEmails.append(email)
 
 
