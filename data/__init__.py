@@ -26,11 +26,11 @@ def config_mapping():
     t_doc = sa.Table('doc', dbfactory.metadata, autoload=True)
     t_conversation = sa.Table('conversation',dbfactory.metadata,autoload = True)
     t_talk = sa.Table("talk",dbfactory.metadata,autoload =True)
-    t_bayes = sa.Table("bayes_lib",dbfactory.metadata,autoload = True)
+    #t_bayes = sa.Table("bayes_lib",dbfactory.metadata,autoload = True)
     orm.mapper(doc_model.Doc, t_doc)
     orm.mapper(conversation.Conversation,t_conversation)
     orm.mapper(talk.Talk,t_talk)
-    orm.mapper(bayeslib.BayeseLib,t_bayes)
+    #orm.mapper(bayeslib.BayeseLib,t_bayes)
 
 def engine_from_config(configfile='db.config'):
     #config_file = open('db.config')

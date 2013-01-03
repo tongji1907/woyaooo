@@ -52,12 +52,15 @@ class MQReceiver_Conversation(receiver_base.MQReceiverBase):
         #creator = int(dict_talk['creator'])
         #created = dict_talk['created']
         description = dict_talk['description']
-        emails = invitejob.do_invite(description)
 
-        mq_api.WoyaoooMQAPI().sendInviteEmail(list(emails),conversation_id)
+        print "talk created>>>>"+description
+        #emails = invitejob.do_invite(description)
+
+        #mq_api.WoyaoooMQAPI().sendInviteEmail(list(emails),conversation_id)
 
 
     def __crawlFinished(self,str_talk):
+        print "crawl finished>>>>>"
         docindexjob.do_index()
         dict_talk = eval(str_talk)
 
@@ -66,7 +69,8 @@ class MQReceiver_Conversation(receiver_base.MQReceiverBase):
         #creator = int(dict_talk['creator'])
         #created = dict_talk['created']
         description = dict_talk['description']
-        print description.decode("utf8").encode("gbk")
+        print description
+        #print description.decode("utf8").encode("gbk")
         emails = invitejob.do_invite(description)
 
         mq_api.WoyaoooMQAPI().sendInviteEmail(list(emails),conversation_id)

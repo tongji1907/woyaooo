@@ -21,7 +21,7 @@ stopwords = dict()
 #        pass
 #fstop.close()
 
-for oneword in ['、','“','”','，','。','《','》','：','：','；','；','!','‘','’','?','？','！','·',' ','','】','(','（',')','）','.']:
+for oneword in ['、','“','”','，','。','《','》','：','：','；','；','!','‘','’','?','？','！','·',' ','','】','(','（',')','）','.','$','"']:
     stopwords[oneword]= True
 
 
@@ -63,14 +63,14 @@ class ICTCLAS:
 
 	def process_str(self, s):	
 		len_s = len(s)          
-		ret = []      
+		ret = []
+
 		li = ictclas50.process_str_a(s,len_s,ictclas50.codeType.utf8,False)
                 for i in li:
 			ret.append(s[i.startPos:(i.startPos+i.length)])
-		#chinesestr[i.startPos:(i.startPos+i.length)]
+
 		return ret
-		#ch_addr = self.ict.ICTCLAS_ParagraphProcess(s)
-		#return c_char_p(ch_addr).value
+
 
 
 '''

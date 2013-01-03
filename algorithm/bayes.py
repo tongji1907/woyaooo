@@ -187,7 +187,7 @@ class Classifier:
         pass
 
 def my_learnstore():
-    engine =data.engine_from_config()
+    engine =data.engine_from_config('localdb.config')
     db = data.init_datafactory(engine)
 
     uselessTalks = dbfactory.Session().query(bayeslib.BayeseLib).filter_by(is_useless=1).all()

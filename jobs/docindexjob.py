@@ -20,7 +20,7 @@ def do_index():
     engine =data.engine_from_config('indexdb.config')
     #engine = data.engine_from_config()
     db = data.init_datafactory(engine)
-    docs = dbfactory.Session().query(doc_model.Doc).filter(doc_model.Doc.dateCreated.like('%2012-12-23%')).all()
+    docs = dbfactory.Session().query(doc_model.Doc).filter(doc_model.Doc.dateCreated>'20121220').all()
     print len(docs)
     idxDir = SimpleFSDirectory(File(indexDir))
     perIndexCount = 5000
