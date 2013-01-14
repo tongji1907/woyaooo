@@ -5,10 +5,12 @@ Created on 2012-12-3
 @author: JD
 '''
 import sys
-from deployment.mq import receiver_base, mq_api
+import mq_api
+import receiver_base
 
-from jobs import invitejob
-from jobs import docindexjob
+
+from deployment import invitejob
+from deployment import docindexjob
 
 class MQReceiver_Conversation(receiver_base.MQReceiverBase):
     def __init__(self):
@@ -60,18 +62,11 @@ class MQReceiver_Conversation(receiver_base.MQReceiverBase):
         print "crawl finished>>>>>"
         docindexjob.do_index()
         dict_talk = eval(str_talk)
-
-        #id = dict_talk['id']
         conversation_id = dict_talk['conversationId']
-        #creator = int(dict_talk['creator'])
-        #created = dict_talk['created']
         description = dict_talk['description']
         print description
-        #print description.decode("utf8").encode("gbk")
         emails = invitejob.do_invite(description)
-
         mq_api.WoyaoooMQAPI().sendInviteEmail(list(emails),conversation_id)
-
 
     
 if __name__ == "__main__":

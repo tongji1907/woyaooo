@@ -1,0 +1,1 @@
+Privacy = ["Unknown", "Public", "Protected", "Private"]
