@@ -3,15 +3,67 @@ from lucene import *
 from lucene import SimpleFSDirectory, System, File,\
     Document, Field, StandardAnalyzer,ChineseAnalyzer,CJKAnalyzer, IndexWriter, Version,\
     IndexSearcher, QueryParser, MultiFieldQueryParser, IndexReader, Term, DateTools
-from mq import mq_api
-#from algorithm import bayes
-import re
+from mq import mqreceiver_conversation
 
+#from algorithm import bayes
+import re,sys
+from mq import receiver_base,mq_api
+import docindexjob
+
+
+class MQReceiver_Conversation(receiver_base.MQReceiverBase):
+    def __init__(self):
+        routing_key_list = []
+        routing_key_list.append("conversation.create")#创建对话
+        routing_key_list.append("crawlfinish")           #添加对话
+        receiver_base.MQReceiverBase.__init__(self, routing_key_list)
+
+    def callBack(self, ch, method, properties, body):
+        try:
+            routing_key = method.routing_key
+            if routing_key == 'conversation.create':
+                self.__createConversation(body)
+
+            elif routing_key == "crawlfinish":
+                self.__crawlFinished(body)
+
+        except Exception, e:
+            print >> sys.stdout, 'Error @MQReceiver_Conversateion.Create: %r' % e
+
+        #========================================具体实现 ========================================
+        #新建对话
+
+    def __createConversation(self, str_talk):
+        """前台发送过来新建对话的实现
+                    参数格式：talk的dict进行str化
+        """
+        dict_talk = eval(str_talk)
+        #id = dict_talk['id']
+        conversation_id = dict_talk['conversationId']
+        #creator = int(dict_talk['creator'])
+        #created = dict_talk['created']
+        description = dict_talk['description']
+
+        print "talk created>>>>"+description
+        #emails = invitejob.do_invite(description)
+
+        #mq_api.WoyaoooMQAPI().sendInviteEmail(list(emails),conversation_id)
+
+
+    def __crawlFinished(self,str_talk):
+        print "crawl finished>>>>>"
+        docindexjob.do_index()
+        dict_talk = eval(str_talk)
+        conversation_id = dict_talk['conversationId']
+        description = dict_talk['description']
+        print description
+        emails = do_invite(description)
+        mq_api.WoyaoooMQAPI().sendInviteEmail(list(emails),conversation_id)
 
 def do_invite(keywords):
     print "invite started!>>>>>>"
     initVM()
-    indexDir  = "/home/william/woyaoo/luceneindex"
+    indexDir  = "/tmp/luceneindex/doc"
     version   = Version.LUCENE_CURRENT
     idxDir = SimpleFSDirectory(File(indexDir))
     analyzer = StandardAnalyzer(version)
@@ -88,5 +140,6 @@ def do_invite(keywords):
 
 
 if __name__=="__main__":
-    do_invite("我想买一辆车，10万以内的，请报价或建议。谢谢")
+    MQReceiver_Conversation().startListen()
+    #do_invite("我想买一辆车，10万以内的，请报价或建议。谢谢")
     #WoyaoooMQAPI().SendMessage("user.sendInvite","email")

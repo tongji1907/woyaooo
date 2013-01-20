@@ -9,7 +9,7 @@ from lucene import SimpleFSDirectory, System, File,\
 
 def do_index():
     initVM()
-    indexDir  = "/home/william/woyaoo/luceneindex"
+    indexDir  = "/tmp/luceneindex/doc"
     version   = Version.LUCENE_CURRENT
     standardAnalyzer  = StandardAnalyzer(version)
     #chineseAnalyzer = CJKAnalyzer(version)

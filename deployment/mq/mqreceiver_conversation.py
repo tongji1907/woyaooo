@@ -9,8 +9,6 @@ import mq_api
 import receiver_base
 
 
-from deployment import invitejob
-from deployment import docindexjob
 
 class MQReceiver_Conversation(receiver_base.MQReceiverBase):
     def __init__(self):
