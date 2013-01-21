@@ -12,7 +12,7 @@ def do_extract():
         if item.description!=None and len(item.description)<10:
             print item.description
             item.subject = item.description
-
-            session.commit()
+            item.title = '['+item.intention+']'+item.subject
+        session.commit()
 if __name__=="__main__":
     do_extract()

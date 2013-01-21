@@ -2,39 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f669428f-4d9c-479f-b468-06db72318171" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/Data/BiWord.big" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/Data/CoreDict.pdat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/Data/CoreDict.pos" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/Data/CoreDict.unig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/Data/FieldDict.pdat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/Data/FieldDict.pos" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/Data/GranDict.pdat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/Data/GranDict.pos" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/Data/ICTCLAS30.ctx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/Data/character.idx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/Data/character.type" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/Data/nr.ctx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/Data/nr.fsa" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/Data/nr.role" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/libICTCLAS50.a" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/user.lic" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/Freq/SogouLabDic.dic" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/Configure.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/Data/ICTCLAS_First.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/Data/ICTPOS.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/Data/PKU.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/Data/PKU_First.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/ICTCLAS.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/API/ICTCLAS50.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/Freq/┤╩╨╘╦╡├ў.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/my_chinesesegment.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/subjectextractjob.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployment/mqreceiver_conversation.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/sass_stdlib.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deployment/dbconfig/db.config" afterPath="$PROJECT_DIR$/deployment/dbconfig/db.config" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deployment/docindexjob.py" afterPath="$PROJECT_DIR$/deployment/docindexjob.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deployment/invitejob.py" afterPath="$PROJECT_DIR$/deployment/invitejob.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deployment/mq/mqreceiver_conversation.py" afterPath="$PROJECT_DIR$/deployment/mq/mqreceiver_conversation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deployment/subjectextractjob.py" afterPath="$PROJECT_DIR$/deployment/subjectextractjob.py" />
     </list>
     <ignored path="woyaooo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,6 +28,15 @@
         <entry file="file://$PROJECT_DIR$/deployment/docindexjob.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="41" column="0" selection-start="1702" selection-end="1741" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="subjectextractjob.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deployment/subjectextractjob.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="16" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#24#40#0" expanded="true" />
               </folding>
@@ -65,13 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="subjectextractjob.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/deployment/subjectextractjob.py">
+      <file leaf-file-name="conversationindexjob.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jobs/conversationindexjob.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="3" selection-start="365" selection-end="365" vertical-scroll-proportion="0.5755208">
-              <folding>
-                <element signature="e#24#40#0" expanded="true" />
-              </folding>
+            <state line="82" column="4" selection-start="3183" selection-end="3183" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -80,17 +57,15 @@
         <entry file="file://$PROJECT_DIR$/deployment/my_chinesesegment.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="43" column="14" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#24#39#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conversationindexjob.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="conversationindexjob.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deployment/conversationindexjob.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="46" selection-start="1063" selection-end="1074" vertical-scroll-proportion="0.0">
+            <state line="59" column="12" selection-start="2219" selection-end="2227" vertical-scroll-proportion="0.39267015">
               <folding />
             </state>
           </provider>
@@ -117,7 +92,6 @@
         <option value="$PROJECT_DIR$/data/__init__.py" />
         <option value="$PROJECT_DIR$/jobs/docindexjob.py" />
         <option value="$PROJECT_DIR$/jobs/mq/mqreceiver_conversation.py" />
-        <option value="$PROJECT_DIR$/jobs/conversationindexjob.py" />
         <option value="$PROJECT_DIR$/deployment/__init__.py" />
         <option value="$PROJECT_DIR$/jobs/invitejob.py" />
         <option value="$PROJECT_DIR$/deployment/dbfactory.py" />
@@ -128,6 +102,7 @@
         <option value="$PROJECT_DIR$/deployment/mq/mqreceiver_conversation.py" />
         <option value="$PROJECT_DIR$/deployment/invitejob.py" />
         <option value="$PROJECT_DIR$/deployment/subjectextractjob.py" />
+        <option value="$PROJECT_DIR$/jobs/conversationindexjob.py" />
       </list>
     </option>
   </component>
@@ -223,20 +198,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="woyaooo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="woyaooo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -244,12 +205,12 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -275,7 +236,7 @@
       <recent name="$PROJECT_DIR$/model" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.subjectextractjob">
+  <component name="RunManager" selected="Python.conversationindexjob">
     <configuration default="false" name="invitejob" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -289,25 +250,6 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deployment/invitejob.py" />
       <option name="PARAMETERS" value="" />
-      <option name="MULTIPROCESS" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="conversationindexjob" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/deployment" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <module name="woyaooo" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deployment/conversationindexjob.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="MULTIPROCESS" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
@@ -325,7 +267,6 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deployment/docindexjob.py" />
       <option name="PARAMETERS" value="" />
-      <option name="MULTIPROCESS" value="false" />
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
@@ -345,7 +286,6 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deployment/mqreceiver_conversation.py" />
       <option name="PARAMETERS" value="" />
-      <option name="MULTIPROCESS" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
@@ -363,7 +303,23 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deployment/subjectextractjob.py" />
       <option name="PARAMETERS" value="" />
-      <option name="MULTIPROCESS" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="conversationindexjob" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/deployment" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="woyaooo" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deployment/conversationindexjob.py" />
+      <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
@@ -381,7 +337,6 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
-      <option name="MULTIPROCESS" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -423,17 +378,17 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.invitejob" />
-      <item index="1" class="java.lang.String" itemvalue="Python.conversationindexjob" />
-      <item index="2" class="java.lang.String" itemvalue="Python.docindexjob" />
-      <item index="3" class="java.lang.String" itemvalue="Python.mqreceiver_conversation" />
-      <item index="4" class="java.lang.String" itemvalue="Python.subjectextractjob" />
+      <item index="1" class="java.lang.String" itemvalue="Python.docindexjob" />
+      <item index="2" class="java.lang.String" itemvalue="Python.mqreceiver_conversation" />
+      <item index="3" class="java.lang.String" itemvalue="Python.subjectextractjob" />
+      <item index="4" class="java.lang.String" itemvalue="Python.conversationindexjob" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.subjectextractjob" />
-        <item index="1" class="java.lang.String" itemvalue="Python.invitejob" />
-        <item index="2" class="java.lang.String" itemvalue="Python.mqreceiver_conversation" />
-        <item index="3" class="java.lang.String" itemvalue="Python.mqreceiver_conversation" />
+        <item index="0" class="java.lang.String" itemvalue="Python.conversationindexjob" />
+        <item index="1" class="java.lang.String" itemvalue="Python.conversationindexjob" />
+        <item index="2" class="java.lang.String" itemvalue="Python.subjectextractjob" />
+        <item index="3" class="java.lang.String" itemvalue="Python.invitejob" />
         <item index="4" class="java.lang.String" itemvalue="Python.mqreceiver_conversation" />
       </list>
     </recent_temporary>
@@ -510,11 +465,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27178258" sideWeight="0.6993569" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27657872" sideWeight="0.70064723" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3971061" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24140687" sideWeight="0.25723472" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3006431" sideWeight="0.9984013" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29935277" sideWeight="0.9984013" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -606,11 +561,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/deployment/doc_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deployment/mq/mq_api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -618,23 +568,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/deployment/dbconfig/indexdb.config">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="2" column="19" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/deployment/Freq/┤╩╨╘╦╡├ў.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="76" selection-end="76" vertical-scroll-proportion="0.29651162">
-          <folding />
-        </state>
+        <state line="6" column="17" selection-start="76" selection-end="76" vertical-scroll-proportion="0.29651162" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithm/API/Configure.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithm/my_chinesesegment.py">
@@ -646,25 +590,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithm/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="23" selection-end="23" vertical-scroll-proportion="0.046321526">
-          <folding />
-        </state>
+        <state line="1" column="0" selection-start="23" selection-end="23" vertical-scroll-proportion="0.046321526" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/deployment/dbconfig/db.config">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/deployment/mq/mqreceiver_conversation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#57#67#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="9" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/deployment/dbfactory.py">
@@ -676,32 +612,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/deployment/invitejob.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="12" selection-start="2257" selection-end="2257" vertical-scroll-proportion="-1.4051447">
-          <folding>
-            <element signature="e#24#44#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="64" column="12" selection-start="2257" selection-end="2257" vertical-scroll-proportion="-1.4051447" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/deployment/mq/receiver_base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="10" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="28" column="10" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/deployment/my_chinesesegment.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="14" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#24#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/conversationindexjob.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="46" selection-start="1063" selection-end="1074" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -709,18 +630,30 @@
     <entry file="file://$PROJECT_DIR$/deployment/docindexjob.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="0" selection-start="1702" selection-end="1741" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/subjectextractjob.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="16" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#24#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/subjectextractjob.py">
+    <entry file="file://$PROJECT_DIR$/jobs/conversationindexjob.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="3" selection-start="365" selection-end="365" vertical-scroll-proportion="0.5755208">
-          <folding>
-            <element signature="e#24#40#0" expanded="true" />
-          </folding>
+        <state line="82" column="4" selection-start="3183" selection-end="3183" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/conversationindexjob.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="12" selection-start="2219" selection-end="2227" vertical-scroll-proportion="0.39267015">
+          <folding />
         </state>
       </provider>
     </entry>
