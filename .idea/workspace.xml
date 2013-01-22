@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f669428f-4d9c-479f-b468-06db72318171" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deployment/subjectextractjob.py" afterPath="$PROJECT_DIR$/deployment/subjectextractjob.py" />
     </list>
     <ignored path="woyaooo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,48 +23,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="docindexjob.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deployment/docindexjob.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="1702" selection-end="1741" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="subjectextractjob.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="subjectextractjob.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deployment/subjectextractjob.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="16" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#24#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="conversationindexjob.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jobs/conversationindexjob.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="4" selection-start="3183" selection-end="3183" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="my_chinesesegment.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deployment/my_chinesesegment.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="14" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="conversationindexjob.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/deployment/conversationindexjob.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="338" selection-end="338" vertical-scroll-proportion="0.28767124">
+            <state line="16" column="0" selection-start="492" selection-end="492" vertical-scroll-proportion="0.5798969">
               <folding />
             </state>
           </provider>
@@ -99,8 +62,8 @@
         <option value="$PROJECT_DIR$/deployment/docindexjob.py" />
         <option value="$PROJECT_DIR$/deployment/mq/mqreceiver_conversation.py" />
         <option value="$PROJECT_DIR$/deployment/invitejob.py" />
-        <option value="$PROJECT_DIR$/deployment/subjectextractjob.py" />
         <option value="$PROJECT_DIR$/jobs/conversationindexjob.py" />
+        <option value="$PROJECT_DIR$/deployment/subjectextractjob.py" />
       </list>
     </option>
   </component>
@@ -136,34 +99,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="woyaooo">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="woyaooo">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="deployment">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -198,17 +133,45 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="woyaooo">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="woyaooo">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="deployment">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="options.searchVisible" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -456,28 +419,32 @@
       <created>1358759691661</created>
       <updated>1358759691661</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add deployment">
+      <created>1358760128396</created>
+      <updated>1358760128396</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32686085" sideWeight="0.49720225" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32686085" sideWeight="0.4940048" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27657872" sideWeight="0.67313915" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2813749" sideWeight="0.67313915" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3971061" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24140687" sideWeight="0.25723472" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32686085" sideWeight="0.49720225" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32686085" sideWeight="0.5003997" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29935277" sideWeight="0.9984013" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3681672" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -622,29 +589,6 @@
         <state line="28" column="10" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/my_chinesesegment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="14" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/docindexjob.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1702" selection-end="1741" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/subjectextractjob.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="16" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#24#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jobs/conversationindexjob.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="82" column="4" selection-start="3183" selection-end="3183" vertical-scroll-proportion="0.0">
@@ -654,7 +598,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/deployment/conversationindexjob.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="338" selection-end="338" vertical-scroll-proportion="0.28767124">
+        <state line="20" column="19" selection-start="557" selection-end="557" vertical-scroll-proportion="0.82191783">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/my_chinesesegment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="14" selection-start="944" selection-end="944" vertical-scroll-proportion="0.04">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/docindexjob.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="1702" selection-end="1741" vertical-scroll-proportion="0.6520619">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/subjectextractjob.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="492" selection-end="492" vertical-scroll-proportion="0.5798969">
           <folding />
         </state>
       </provider>

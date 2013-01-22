@@ -14,5 +14,6 @@ def do_extract():
             item.subject = item.description
             item.title = '['+item.intention+']'+item.subject
         session.commit()
+
 if __name__=="__main__":
     do_extract()
